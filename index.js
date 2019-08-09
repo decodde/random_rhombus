@@ -26,7 +26,7 @@ app.get("/random-string/between/:min/:max",(req,res)=>{
 })
 
 app.get("/")
-app.listen(PORT,"127.168.10.10",(err)=>{
+app.listen(process.env.PORT||80,(err)=>{
     err?console.log(err):err
     console.log("           _______________\n          /              /\n         /random_rhombus/\n        /______________/\n  >>>>> server runnning <<<<<")
 }) 
